@@ -1,11 +1,11 @@
-# Live Project
+# Internship Project
 
 ## Introduction
-For the last two weeks of my time at the tech academy, I worked with my peers in a team developing a full scale .NET MVC Web Application using Entity Framework in C#. The project was a website for a local Theater company that inculded an Admin section for non-technical theater employees to manage the site. I really enjoyed working on imrovements to an existing code base and seeing my changes in action. This was an excelent experience in working on a team using Agile/Scrum methodology through Azure DevOps.  I learned a lot from I working on several stories that involved changes to [back end](#back-end-stories) and [front end](#front-end-stories).  
+For the two-week sprint at my internship with Prosper IT Consulting, I worked with my peers in a team developing a full scale .NET MVC Web Application using Entity Framework in C#. The project was a website for a local Theater company that inculded an Admin section for non-technical theater employees to manage the site. I really enjoyed working on imrovements to an existing code base and seeing my changes in action. This was an excelent experience in working on a team using Agile/Scrum methodology through Azure DevOps.  I learned a lot from working on several tasks that involved changes to [back end](#back-end-tasks) and [front end](#front-end-tasks). I had a great experience during this internship and I am excited for my next opportunity to contribute to a project with a team of developers!
 
-Here is a brief description of the stories I completed:
+Here is a brief description of the projects I completed:
 
-## Back End Stories
+## Back End Tasks
 
 * [Add Photo Modal](#Add-Photo-Modal)
 * [Bug Fix](#bug-fix)
@@ -13,7 +13,10 @@ Here is a brief description of the stories I completed:
 
 ### Add Photo Modal
 
+
 The Theater website Admin section had a list of models that were missing photos.  My task was to add a button next to each model on the list that would open a modal where to admin could attach a photo to that model.  I created a modal in the view for each model type and passed the information back to this method in the controller which creates a photo and attaches it to the apropriate model.  
+
+![Add Photo Modal](./screenshots/AddPhoto.png)
 
 ```
         // Method called from dashboard modals to add a photo to models missing photos 
@@ -68,7 +71,7 @@ When the default photo of a production was deleted from the site, it was meant t
 
 
 
-## Front End Stories
+## Front End Tasks
 
 * [Add Button When List Empty](#Add-Button-When-List-Empty)
 * [Display All User Donations](#Display-All-User-Donations)
@@ -94,6 +97,8 @@ For this story the goal was to add a button to link to the User List page only w
 ### Display All User Donations
 
 The purpose of this story was to show users of the site a list of their previous donations to the theater.  If they did not have any donations, instead there would be a link to the donations page.  
+
+![Donations](./screenshots/Donations.png)
 
 ```
 <!-- Donations section, displays list of past donations, if any -->
@@ -152,4 +157,4 @@ model.Donations = (from s in db.Donations
                     select s).ToList();
 
 ```
-[Page top](#live-project) | [Back End Stories](#back-end-stories) | [Front End Stories](#front-end-stories)
+[Page top](#Internship-project) | [Back End Tasks](#back-end-tasks) | [Front End Tasks](#front-end-tasks)
